@@ -46,9 +46,7 @@ to `.wasm` using [wasm-pack](https://github.com/rustwasm/wasm-pack).
 Once the `.wasm` file has been generated, it is [pre-registered as a package](./javascript/package.json) in the
 `javascript` app.
 
-The Javascript app will always see the wasm module as an npm package.
-
-The [javascript](./javascript)
+The Javascript app will always see the wasm module as an npm package, and allow our `javascript` app to execute it.
 
 ## 💪🏽 Contribution
 
