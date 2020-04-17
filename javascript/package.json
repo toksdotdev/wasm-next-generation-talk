@@ -1,0 +1,25 @@
+{
+  "author": "Tochuwu Nkemdilim <nkemdilimtochukwu@gmail.com>",
+  "name": "rust-webpack-template",
+  "license": "MIT",
+  "repository": {
+    "url": "github.com/TNkemdilim/wasm-next-generation-talk"
+  },
+  "version": "0.1.0",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open -d"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.1.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^3.7.1",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "browser-process-hrtime": "^1.0.0",
+    "testing-wasm": "file:../rust/pkg"
+  }
+}

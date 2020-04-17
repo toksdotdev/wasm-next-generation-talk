@@ -1,4 +1,4 @@
-# Web Assembly Demo (Rust & JS)
+# Web Assembly Demo (Rust & Node)
 
 This source code was the demo for the talk titled, "[Web Assembly: Is it really next generation](https://bit.ly/recording-wasm-next-generation)"?
 
@@ -25,7 +25,7 @@ With your termimal:
 wasm-pack build
 ```
 
-- `cd` into the [js](./js) directory, and run the following commands:
+- `cd` into the [javascript](./javascript) directory, and run the following commands:
 
 ```bash
 npm install
@@ -38,17 +38,17 @@ This should serve your app on `localhost:8080` or the port might be different if
 
 ## 👩🏽‍🏫 Understanding the Code
 
-The source is broken into 2 sections. The [js](./js) and the [rust](./rust) directory.
+The source is broken into 2 sections. The [javascript](./javascript) and the [rust](./rust) directory.
 
 The [rust](./rust) is responsible for parsing the stringified JSON, and gets compiled
 to `.wasm` using [wasm-pack](https://github.com/rustwasm/wasm-pack).
 
-Once the `.wasm` file has been generated, it is [pre-registered as a package](./js/package.json) in the
-`js` app.
+Once the `.wasm` file has been generated, it is [pre-registered as a package](./javascript/package.json) in the
+`javascript` app.
 
-The JS app will always see the wasm module as an npm package.
+The Javascript app will always see the wasm module as an npm package.
 
-The [js](./js)
+The [javascript](./javascript)
 
 ## 💪🏽 Contribution
 
